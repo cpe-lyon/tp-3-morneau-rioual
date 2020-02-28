@@ -16,15 +16,24 @@
 
 6) Le paquet "sudoku" permet de jouer au suduku.
 
-7) 
+7) On utilise la commande ```grep "apt install" /var/log/apt/history/log``` pour afficher les derniers paquets installés par cette ligne de commande.
  
 ## Exercice 2
 
-On peut utiliser la commande ```dpkg -S commande``` pour trouver quel paquet à installer une commande. ```ls``` par exemple vient de __linux-headers-5.3.0-29__.
+On peut utiliser la commande ```dpkg -S commande``` pour trouver quel paquet a installé une commande. ```ls``` par exemple vient de __linux-headers-5.3.0-29__.
 
 ## Exercice 3:
 
+On utilise le script suivant pour obtenir le paquet ayant installé une commande:
+
+```
+#!/bin/bash
+dpkg -S $1 | grep usr/ | head -1 | cut -d ":" -f 1
+```
+
 ## Exercice 4:
+
+La commande ```dpkg -L coreutils``` nous donne les programmes livrés avec coreutils. La commande ```[``` sert à indiquer un test booléen.
 
 ## Exercice 5:
 
