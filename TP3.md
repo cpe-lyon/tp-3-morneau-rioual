@@ -6,19 +6,21 @@
 
 1) Les 5 derniers paquets installés sont "open-vm-tools.list", "ubuntu-server.list", "unattended-upgrade.list", "cloud-init.list" et "m-locate.list". On les trouve avec la commande: ```ls -ltr /var/lib/dpkg/info/*.list |tail -5```
 
-2) 
+2) On trouve 544 paquets installés avec: ```dpkg --get-selections | wc -l```, et 545 avec ```apt list --installed | wc -l```.
 
-3) 
+3) On trouve qu'il y a 88252 paquets disponibes au téléchargement avc la commande: ```apt-cache dup | grep -oP 'Package:' | wc -l```
 
-4) 
+4) On créé un alias ```maj``` mettant à jour le sytème en utilisant la commande: ```alias maj='sudo apt update'```. Pour rendre cet alias permanent, on place cette commande dans le fichier _.bashrc_.
 
-5) 
+5) Le paquet fortunes permet de tirer aléatoirement un pictogramme de biscuit de fortune chinois. On l'installe avec ```apt install fortune```.
 
-6) 
+6) Le paquet "sudoku" permet de jouer au suduku.
 
 7) 
  
 ## Exercice 2
+
+On peut utiliser la commande ```dpkg -S commande``` pour trouver quel paquet à installer une commande. ```ls``` par exemple vient de __linux-headers-5.3.0-29__.
 
 ## Exercice 3:
 
