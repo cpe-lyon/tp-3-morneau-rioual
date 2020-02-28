@@ -24,7 +24,7 @@ On peut utiliser la commande ```dpkg -S commande``` pour trouver quel paquet a i
 
 ## Exercice 3:
 
-On utilise le script suivant pour obtenir le paquet ayant installé une commande:
+On utilise le script __origine-commande.sh__ suivant pour obtenir le paquet ayant installé une commande:
 
 ```
 #!/bin/bash
@@ -36,6 +36,8 @@ dpkg -S $1 | grep usr/ | head -1 | cut -d ":" -f 1
 La commande ```dpkg -L coreutils``` nous donne les programmes livrés avec coreutils. La commande ```[``` sert à indiquer un test booléen.
 
 ## Exercice 5:
+
+On installe __aptitude__ avec __apt__, on fait une recherche avec ```/```, choisit le bon paquet avec ```n```, appuie sur ```+``` pour installer, puis 2 fois ```g``` pour confirmer l'installation.
 
 ## Exercice 6:
 
