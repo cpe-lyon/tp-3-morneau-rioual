@@ -22,14 +22,15 @@
 
 On peut utiliser la commande ```dpkg -S commande``` pour trouver quel paquet a installé une commande. ```ls``` par exemple vient de __linux-headers-5.3.0-29__.
 
-## Exercice 3:
-
 On utilise le script __origine-commande.sh__ suivant pour obtenir le paquet ayant installé une commande:
 
 ```
 #!/bin/bash
 dpkg -S $1 | grep usr/ | head -1 | cut -d ":" -f 1
 ```
+
+## Exercice 3:
+
 
 ## Exercice 4:
 
