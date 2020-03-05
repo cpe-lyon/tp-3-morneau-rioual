@@ -31,6 +31,18 @@ dpkg -S $1 | grep usr/ | head -1 | cut -d ":" -f 1
 
 ## Exercice 3:
 
+Le script suivant permet de regarder si un paquet à été installé:
+
+```
+#!/bin/bash
+nom=$1;
+installeoupas=$(apt list --installed|grep -w $nom|wc -l);
+if [ $installeoupas -ge 1];then
+	echo "INSTALLE"
+else
+	echo "NON INSTALLE"
+fi
+```
 
 ## Exercice 4:
 
@@ -41,5 +53,7 @@ La commande ```dpkg -L coreutils``` nous donne les programmes livrés avec coreu
 On installe __aptitude__ avec __apt__, on fait une recherche avec ```/```, choisit le bon paquet avec ```n```, appuie sur ```+``` pour installer, puis 2 fois ```g``` pour confirmer l'installation.
 
 ## Exercice 6:
+
+Après avoir installé la version oracle de java comme indiqué, on trouve dans ```/etc/apt.sources.list.d``` le fichier _linuxuprising-ubuntu-java-eoan.list_. Ce fichier contient le lien http de la source du paquet.
 
 ## Exercice 7:
