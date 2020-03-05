@@ -57,3 +57,11 @@ On installe __aptitude__ avec __apt__, on fait une recherche avec ```/```, chois
 Après avoir installé la version oracle de java comme indiqué, on trouve dans ```/etc/apt.sources.list.d``` le fichier _linuxuprising-ubuntu-java-eoan.list_. Ce fichier contient le lien http de la source du paquet.
 
 ## Exercice 7:
+
+En suivant les instructions à la lettre on réussi bien à créer notre poropre paquet.
+
+## Exercice 8:
+
+1) On clone le dépôt git _https://github.com/jubalh/nudoku_ comme indiqué.
+
+2) On commence par installer le paquet autoconf, puis gettext, puis autopoint
