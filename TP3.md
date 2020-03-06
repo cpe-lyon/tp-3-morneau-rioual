@@ -58,7 +58,29 @@ Après avoir installé la version oracle de java comme indiqué, on trouve dans 
 
 ## Exercice 7:
 
-En suivant les instructions à la lettre on réussi bien à créer notre propre paquet.
+I
+1. On crée toute l'arborescence de notre dépôt avec la commande suivante :
+```cd ~/script|mkdir origine-commande|cd origine-commande|mkdir -p DEBIAN/usr/local/bin```
+
+2.On crée notre fichier controle qui va contenir tous les paramètres de notre package avec la commande suivante :
+```touch ./DEBIAN/control```
+
+3. La commande ```dpkg-deb --build origine-commande``` nous donne le résultat suivant 
+
+Notre Package a été crée sous format .deb
+
+II
+
+2. On crée le squelette de notre dépôt avec la commande suivante :
+```cd /|mkdir repo-cpe|cd repo-cpe|mkdir ./{conf,packages}```
+
+4.La commande ```reprepro -b . includedeb cosmic origine-commande.deb``` crée arborescence creer trois sous dossier : db, dists, pool
+
+7.Lors de ```apt update```, on voit bien que le dépot n'est pas signé.
+
+III
+En suivant les instructions, nous sommes amené a changer de passphrase et d'exporter cette meme pass^hrase sur notre dépôt ce qui débloque apt update
+
 
 ## Exercice 8:
 
