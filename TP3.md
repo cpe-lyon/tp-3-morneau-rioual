@@ -77,11 +77,14 @@ II
 4.La commande ```reprepro -b . includedeb cosmic origine-commande.deb``` crée arborescence creer trois sous dossier : db, dists, pool
 
 7.Lors de ```apt update```, on voit bien que le dépot n'est pas signé.
+<div style="text-align:center"><img src="https://github.com/cpe-lyon/tp-3-morneau-rioual/blob/master/depotnonsigne.PNG" /></div>
+
 
 III
-En suivant les instructions, nous sommes amené a changer de passphrase et d'exporter cette meme pass^hrase sur notre dépôt ce qui débloque apt update
-![alt text](https://github.com/cpe-lyon/tp-3-morneau-rioual/blob/master/demande.PNG)
+En suivant les instructions, nous sommes amené a changer de passphrase et d'exporter cette meme passphrase sur notre dépôt ce qui débloque apt update
 <div style="text-align:center"><img src="https://github.com/cpe-lyon/tp-3-morneau-rioual/blob/master/demande.PNG" /></div>
+
+<div style="text-align:center"><img src="https://github.com/cpe-lyon/tp-3-morneau-rioual/blob/master/depotsigne.PNG" /></div>
 
 
 ## Exercice 8:
