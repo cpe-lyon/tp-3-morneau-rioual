@@ -80,7 +80,7 @@ II
 
 III
 En suivant les instructions, nous sommes amené a changer de passphrase et d'exporter cette meme pass^hrase sur notre dépôt ce qui débloque apt update
-![alt text](https://github.com/cpe-lyon/tp-3-morneau-rioual/demande.PNG "Logo Title Text 1")
+![alt text](https://github.com/cpe-lyon/tp-3-morneau-rioual/blob/master/demande.PNG "Logo Title Text 1")
 
 
 ## Exercice 8:
