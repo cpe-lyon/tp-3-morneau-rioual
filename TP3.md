@@ -58,10 +58,10 @@ Après avoir installé la version oracle de java comme indiqué, on trouve dans 
 
 ## Exercice 7:
 
-En suivant les instructions à la lettre on réussi bien à créer notre poropre paquet.
+En suivant les instructions à la lettre on réussi bien à créer notre propre paquet.
 
 ## Exercice 8:
 
 1) On clone le dépôt git _https://github.com/jubalh/nudoku_ comme indiqué.
 
-2) On commence par installer le paquet autoconf, puis gettext, puis autopoint
+2) On commence par installer le paquet autoconf, puis gettext, puis autopoint. Lors du ```autoreconf -i```, autopoint demande la version 0.20 au moins de gettext, la plus récente étant la 0.19.8.1-9.
